@@ -1,0 +1,15 @@
+div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(238, 176, 60);
+}
+p{
+    padding: 20px 10px;
+    transition: 0.1s;
+    font-size: 25px;
+}
+p:hover{
+    background-color: rgb(192, 129, 11);
+    cursor: pointer;
+}
