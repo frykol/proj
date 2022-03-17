@@ -21,3 +21,33 @@ p{
     margin: 10px 0;
     text-align: center;
 }
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border: 1px solid orange;
+    transition: 0.2s;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#del{
+    border: 1px solid rgb(230, 49, 49);
+    color: black;
+}
+
+#del:hover{
+    background-color: rgb(230, 49, 49);
+    color: white;
+}

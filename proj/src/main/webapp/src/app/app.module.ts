@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {Router, RouterModule, Routes} from "@angular/router"
 import { UseraddComponent } from './useradd/useradd.component';
 import { FormsModule } from '@angular/forms';
+import { UserprofComponent } from './userprof/userprof.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
   {
     path: "adduser",
     component: UseraddComponent
+  },
+  {
+    path: "userprofile/:id",
+    component: UserprofComponent
   }
 ];
 
@@ -27,7 +32,8 @@ const appRoutes: Routes = [
     AppComponent,
     UserdivComponent,
     NavbarComponent,
-    UseraddComponent
+    UseraddComponent,
+    UserprofComponent
   ],
   imports: [
     BrowserModule,

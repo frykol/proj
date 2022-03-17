@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fInfo{
+    width: 70%;
+    margin: 10px 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid orange;
+}
+#fInfo p{
+    font-size: 25px;
+}
+
+#desc{
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#desc p{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.3);
+    border-radius: 10px;
+}
+button{
+    width: 40%;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    border: 1px solid orange;
+    transition: 0.2s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}

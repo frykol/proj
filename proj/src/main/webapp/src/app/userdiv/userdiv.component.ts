@@ -24,4 +24,11 @@ export class UserdivComponent implements OnInit {
     )
   }
 
+  deleteUser(userId: Number): void{
+    this.userService.deleteUser(userId).subscribe(
+      (response: void) => {console.log("usuniento"); this.getUsers()},
+      (error: HttpErrorResponse) => {alert(error)}
+    )
+  }
+
 }
