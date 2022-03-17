@@ -8,22 +8,7 @@ import { UserService } from './user.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  users: User[] = [];
+export class AppComponent {
 
-  constructor(private userService: UserService){}
-
-  ngOnInit(): void {
-    this.getUsers();
-  }
-
-  getUsers(): void{
-    this.userService.getUsers().subscribe(
-      (response: User[]) => {this.users = response},
-      (error: HttpErrorResponse) => {alert(error)}
-    )
-  }
-
-  //
 
 }

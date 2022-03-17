@@ -9,6 +9,7 @@ import { UserdivComponent } from './userdiv/userdiv.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {Router, RouterModule, Routes} from "@angular/router"
 import { UseraddComponent } from './useradd/useradd.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ p{
     padding: 20px 10px;
     transition: 0.1s;
     font-size: 25px;
+    color: white;
 }
 p:hover{
     background-color: rgb(192, 129, 11);

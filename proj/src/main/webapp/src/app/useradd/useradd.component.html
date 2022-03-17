@@ -1,3 +1,20 @@
 <div>
     <h1>Dodaj użytkownika</h1>
+    <form #addForm="ngForm" (ngSubmit)="onUserAdd(addForm)">
+        <div id="twodivs">
+            <div>
+                <p>Nazwa</p>
+                <input type="text" ngModel name="username" required>
+            </div>
+            <div>
+                <p>Email</p>
+                <input type="text" ngModel name="email" required>
+            </div>
+        </div>
+        <div id="desc">
+            <p>Opis</p>
+            <textarea ngModel name="description" required></textarea>
+        </div>
+        <button [disabled]="addForm.invalid" type="submit">Dodaj</button>
+    </form>
 </div>

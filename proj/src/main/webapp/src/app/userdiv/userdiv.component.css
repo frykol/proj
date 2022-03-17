@@ -6,7 +6,7 @@
 }
 
 #user{
-    width: 20%;
+    min-width: 20%;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 10px 20px;
